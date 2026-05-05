@@ -7,13 +7,14 @@
 Visualizer::Visualizer(std::size_t width, std::size_t height, std::string title,
                        std::size_t fps)
     : width_(width), height_(height), title_(title), fps_(fps) {
+  SetConfigFlags(FLAG_WINDOW_HIGHDPI);
   InitWindow(width_, height_, title_.c_str());
 }
 
 Visualizer::~Visualizer() { CloseWindow(); }
 
 void Visualizer::visualize(std::vector<SortStep> steps, std::vector<int> data) {
-  // SetTargetFPS(fps_);
+  SetTargetFPS(fps_);
 
   int barWidth = width_ / data.size();
   int barHeightInc = height_ / 100;

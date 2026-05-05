@@ -6,14 +6,14 @@
 #include <vector>
 
 int main() {
-  std::size_t numEntries{1000};
+  std::size_t numEntries{500};
   std::vector<int> data(numEntries);
 
   std::generate(data.begin(), data.end(), []() { return rand() % 100; });
 
   std::vector<SortStep> steps = bubbleSort(data);
 
-  Visualizer visualizer(1000, 500, "Visualizer", 1200);
+  Visualizer visualizer(1000, 500, "Visualizer", -1);
   visualizer.visualize(steps, data);
 
   return EXIT_SUCCESS;
