@@ -54,7 +54,7 @@ void Visualizer::visualize(std::vector<SortStep> steps, std::vector<int> data) {
     ClearBackground(BLACK);
 
     for (std::size_t i{0}; i < data.size(); i++) {
-      int width = barWidth;
+      int width = barWidth - 1;
       int height = barHeightInc * data[i];
       int posX = barWidth * i;
       int posY = height_ - height;

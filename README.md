@@ -1,6 +1,6 @@
 Sort algorithms to include
 - [x] Bubble
-- [ ] Insertion
+- [x] Insertion
 - [ ] Selection
 - [ ] Merge
 - [ ] Quick

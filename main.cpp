@@ -11,9 +11,9 @@ int main() {
 
   std::generate(data.begin(), data.end(), []() { return rand() % 100; });
 
-  std::vector<SortStep> steps = bubbleSort(data);
+  std::vector<SortStep> steps = insertionSort(data);
 
-  Visualizer visualizer(1000, 500, "Visualizer", -1);
+  Visualizer visualizer(2000, 1000, "Visualizer", -1);
   visualizer.visualize(steps, data);
 
   return EXIT_SUCCESS;
