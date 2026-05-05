@@ -1,0 +1,13 @@
+Sort algorithms to include
+- Bubble
+- Insertion
+- Selection
+- Merge
+- Quick
+- Heap
+- Shell
+- Cocktail Shaker
+- Comb
+- Radix
+- Counting
+- Bogo

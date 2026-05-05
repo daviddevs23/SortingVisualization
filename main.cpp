@@ -1,0 +1,20 @@
+#include "src/StepRecorder.hpp"
+#include "src/algorithms/SortDefinitions.hpp"
+#include "src/graphics/Graphics.hpp"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+
+int main() {
+  std::size_t numEntries{1000};
+  std::vector<int> data(numEntries);
+
+  std::generate(data.begin(), data.end(), []() { return rand() % 100; });
+
+  std::vector<SortStep> steps = bubbleSort(data);
+
+  Visualizer visualizer(1000, 500, "Visualizer", 1200);
+  visualizer.visualize(steps, data);
+
+  return EXIT_SUCCESS;
+}
