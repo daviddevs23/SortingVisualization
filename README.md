@@ -2,7 +2,7 @@ Sort algorithms to include
 - [x] Bubble
 - [x] Insertion
 - [x] Selection
-- [ ] Merge
+- [x] Merge
 - [ ] Quick
 - [ ] Heap
 - [ ] Shell

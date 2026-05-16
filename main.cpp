@@ -6,12 +6,12 @@
 #include <vector>
 
 int main() {
-  std::size_t numEntries{500};
+  std::size_t numEntries{1000};
   std::vector<int> data(numEntries);
 
   std::generate(data.begin(), data.end(), []() { return rand() % 100; });
 
-  std::vector<SortStep> steps = selectionSort(data);
+  std::vector<SortStep> steps = mergeSort(data);
 
   Visualizer visualizer(2000, 1000, "Visualizer", -1);
   visualizer.visualize(steps, data);
